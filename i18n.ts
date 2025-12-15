@@ -47,7 +47,7 @@ const resources = {
         "terms-of-service": "Terms of Service"
       },
       hero: {
-        title_static: 'Outpace Your Competitionnn.',
+        title_static: 'Outpace Your Competition.',
         title_prefix: 'Built for Digital',
         satisfied_customers: 'satisfied customers',
         dynamic: [
