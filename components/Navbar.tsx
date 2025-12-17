@@ -34,7 +34,7 @@ export const Navbar: React.FC = () => {
       setScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
-    
+
     if (document.documentElement.classList.contains('dark')) {
       setIsDark(true);
     }
@@ -46,7 +46,7 @@ export const Navbar: React.FC = () => {
         }
       });
     });
-    
+
     observer.observe(document.documentElement, { attributes: true });
 
     return () => {
@@ -71,13 +71,13 @@ export const Navbar: React.FC = () => {
     }
   };
 
-  const LogoMark = isDark 
-    ? "https://jxing.great-site.net/images/jxingtech/jxing_mark_white.png"
-    : "https://jxing.great-site.net/images/jxingtech/jxing_mark_blue.png";
+  const LogoMark = isDark
+    ? "/images/branding/jxing_mark_white.png"
+    : "/images/branding/jxing_mark_blue.png";
 
   const LogoText = isDark
-    ? "https://jxing.great-site.net/images/jxingtech/jxing_logo_white.png"
-    : "https://jxing.great-site.net/images/jxingtech/jxing_logo_blue.png";
+    ? "/images/branding/jxing_logo_white.png"
+    : "/images/branding/jxing_logo_blue.png";
 
   // Home link logic
   const homeLink = lang === 'en' ? '/' : `/${lang}`;
@@ -85,14 +85,14 @@ export const Navbar: React.FC = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'py-4 bg-white/80 dark:bg-brand-oxford/90 backdrop-blur-md shadow-sm border-b border-brand-oxford/5 dark:border-white/5' : 'py-6 bg-transparent'}`}>
       <div className="container mx-auto px-6 flex items-center justify-between">
-        
+
         {/* Logo */}
         <Link to={homeLink} className="flex items-center gap-3 group" aria-label="JXING Tech Home">
           <div className="w-12 h-12 rounded-xl bg-transparent border border-brand-oxford/10 dark:border-white/10 flex items-center justify-center p-2.5 transition-colors group-hover:border-brand-azure dark:group-hover:border-brand-robin overflow-hidden">
-             <img src={LogoMark} alt="JXING Mark" className="w-full h-full object-contain" />
+            <img src={LogoMark} alt="JXING Mark" className="w-full h-full object-contain" />
           </div>
           <div className="h-8 flex items-center">
-             <img src={LogoText} alt="JXING" className="h-full object-contain" />
+            <img src={LogoText} alt="JXING" className="h-full object-contain" />
           </div>
         </Link>
 
@@ -103,16 +103,15 @@ export const Navbar: React.FC = () => {
             // Logic to check active link
             const currentPath = location.pathname;
             const isActive = currentPath === path || (path !== '/' && currentPath.startsWith(path));
-            
+
             return (
-              <Link 
-                key={index} 
-                to={path} 
-                className={`px-5 py-2 rounded-lg text-sm font-medium transition-colors border border-transparent ${
-                  isActive
-                    ? 'bg-brand-ghost dark:bg-slate-800 border-brand-oxford/5 dark:border-white/5 text-brand-oxford dark:text-white' 
+              <Link
+                key={index}
+                to={path}
+                className={`px-5 py-2 rounded-lg text-sm font-medium transition-colors border border-transparent ${isActive
+                    ? 'bg-brand-ghost dark:bg-slate-800 border-brand-oxford/5 dark:border-white/5 text-brand-oxford dark:text-white'
                     : 'text-slate-600 dark:text-slate-300 hover:text-brand-oxford dark:hover:text-white hover:bg-brand-ghost/50 dark:hover:bg-slate-800/50'
-                }`}
+                  }`}
               >
                 {link.label}
               </Link>
@@ -122,14 +121,14 @@ export const Navbar: React.FC = () => {
 
         {/* Action Button & Language (Desktop) */}
         <div className="hidden lg:flex items-center gap-4">
-          <button 
+          <button
             onClick={toggleDarkMode}
             aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
             className="w-10 h-10 rounded-xl border border-brand-oxford/10 dark:border-white/10 text-brand-oxford dark:text-slate-300 flex items-center justify-center hover:bg-brand-ghost dark:hover:bg-slate-800 transition-colors"
           >
             {isDark ? <Sun size={20} /> : <Moon size={20} />}
           </button>
-          
+
           <Button variant="wipe" onClick={openBooking}>
             {t('nav.getInTouch')}
           </Button>
@@ -139,17 +138,17 @@ export const Navbar: React.FC = () => {
 
         {/* Mobile Toggle */}
         <div className="flex lg:hidden items-center gap-3">
-          <button 
+          <button
             onClick={toggleDarkMode}
             aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
             className="p-2 text-brand-oxford dark:text-white rounded-lg border border-brand-oxford/10 dark:border-white/10"
           >
             {isDark ? <Sun size={20} /> : <Moon size={20} />}
           </button>
-          
+
           <LanguageSwitcher />
 
-          <button 
+          <button
             className="p-2 text-brand-oxford dark:text-white rounded-lg border border-brand-oxford/10 dark:border-white/10"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation menu"
@@ -164,17 +163,17 @@ export const Navbar: React.FC = () => {
       {mobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-white dark:bg-brand-oxford border-b border-brand-ghost dark:border-slate-800 p-6 flex flex-col gap-4 shadow-xl max-h-[calc(100vh-80px)] overflow-y-auto">
           {NAV_LINKS.map((link, index) => (
-            <Link 
-              key={index} 
-              to={getPath(link.href)} 
+            <Link
+              key={index}
+              to={getPath(link.href)}
               className="text-brand-oxford dark:text-white font-medium py-2 px-4 rounded-lg border border-transparent hover:border-brand-oxford/10 dark:hover:border-white/10"
               onClick={() => setMobileMenuOpen(false)}
             >
               {link.label}
             </Link>
           ))}
-          <Button 
-            variant="wipe" 
+          <Button
+            variant="wipe"
             className="w-full justify-center"
             onClick={() => {
               setMobileMenuOpen(false);
