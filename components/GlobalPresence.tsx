@@ -27,7 +27,7 @@ const CLIENTS: ClientLocation[] = [
     id: 'c2',
     name: 'FinNova Ltd',
     location: 'London, UK',
-    logo: 'https://logo.clearbit.com/revolut.com',
+    logo: 'https://cdn.brandfetch.io/idQH6e1xMu/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B',
     top: '22%',
     left: '55%'
   },
