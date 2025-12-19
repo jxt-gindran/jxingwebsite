@@ -97,7 +97,7 @@ function App() {
   return (
     <HelmetProvider>
       <BookingProvider>
-        <Router>
+        <Router> 
           <ScrollToTop />
           <Routes>
             {/* Root Path (Default English) */}
