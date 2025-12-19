@@ -16,15 +16,15 @@ export const LanguageSwitcher: React.FC = () => {
 
   const changeLanguage = (langCode: string) => {
     i18n.changeLanguage(langCode);
-    
+
     // Logic to update URL path:
     // 1. If switching TO 'en', remove language prefix.
     // 2. If switching FROM 'en' TO other, add prefix.
     // 3. If switching FROM other TO other, replace prefix.
-    
+
     const currentPath = location.pathname;
     const segments = currentPath.split('/').filter(Boolean);
-    
+
     // Check if the first segment is a known language code
     const firstIsLang = LANGUAGES.some(l => l.code === segments[0]);
 
@@ -44,11 +44,11 @@ export const LanguageSwitcher: React.FC = () => {
       }
       // If langCode IS 'en', do nothing (stay on /about)
     }
-    
+
     const newPath = `/${segments.join('/')}`;
     navigate(newPath);
     setIsOpen(false);
-    
+
     // Update document direction and lang attribute
     const dir = LANGUAGES.find(l => l.code === langCode)?.dir || 'ltr';
     document.documentElement.dir = dir;
@@ -68,9 +68,9 @@ export const LanguageSwitcher: React.FC = () => {
 
   return (
     <div className="relative" ref={dropdownRef}>
-      <button 
+      <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1 px-2 py-2 rounded-lg border border-brand-oxford/10 dark:border-white/10 hover:bg-brand-ghost dark:hover:bg-slate-800 transition-colors bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm"
+        className="flex items-center gap-1 w-12 h-12 justify-center rounded-lg border border-brand-oxford/10 dark:border-white/10 hover:bg-brand-ghost dark:hover:bg-slate-800 transition-colors bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm"
         aria-label={t('common.selectLanguage')}
       >
         <span className="text-2xl leading-none">{currentLang.flag}</span>

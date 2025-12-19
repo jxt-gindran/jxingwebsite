@@ -1,145 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JXING Tech - Digital Agency</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['"Poppins"', 'sans-serif'],
-            },
-            colors: {
-              brand: {
-                azure: '#007DEB', // Primary Action
-                marian: '#003F88', // Darker Blue / Hover
-                oxford: '#0A1640', // Dark Backgrounds / Text
-                ghost: '#F0F3F9', // Light Backgrounds
-                timberwolf: '#D3D3D3', // Borders / Light Gray
-                xanthous: '#FFC759', // Accent Yellow
-                robin: '#59C3C3', // Accent Teal
-              }
-            },
-            borderRadius: {
-              '4xl': '2rem',
-              '5xl': '2.5rem',
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="JXING Tech is a leading digital agency in Malaysia specializing in web development, e-commerce, AI automation, and performance marketing. We help businesses achieve digital dominance." />
+  <title>JXING Tech - Digital Agency</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Poppins"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              azure: '#007DEB', // Primary Action
+              marian: '#003F88', // Darker Blue / Hover
+              oxford: '#0A1640', // Dark Backgrounds / Text
+              ghost: '#F0F3F9', // Light Backgrounds
+              timberwolf: '#D3D3D3', // Borders / Light Gray
+              xanthous: '#FFC759', // Accent Yellow
+              robin: '#59C3C3', // Accent Teal
             }
+          },
+          borderRadius: {
+            '4xl': '2rem',
+            '5xl': '2.5rem',
           }
         }
       }
-    </script>
-    <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-      }
-      .hide-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .hide-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-      html {
-        transition: background-color 0.3s, color 0.3s;
-      }
-      
-      /* Global Entrance Animations */
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    html {
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Global Entrance Animations */
+    .js-scroll-trigger {
+      opacity: 0;
+      transform: translateY(30px) scale(0.98);
+      transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+      /* Ease out quint-ish */
+      will-change: opacity, transform;
+    }
+
+    .js-scroll-trigger.is-visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    /* Respect user motion preferences */
+    @media (prefers-reduced-motion: reduce) {
       .js-scroll-trigger {
-        opacity: 0;
-        transform: translateY(30px) scale(0.98);
-        transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), 
-                    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1); /* Ease out quint-ish */
-        will-change: opacity, transform;
-      }
-      
-      .js-scroll-trigger.is-visible {
         opacity: 1;
-        transform: translateY(0) scale(1);
+        transform: none;
+        transition: none;
+      }
+    }
+
+    /* Global Hover Box Effect */
+    .hover-box {
+      transition: transform 0.4s ease-out, box-shadow 0.4s ease-out, border-color 0.3s;
+      will-change: transform;
+    }
+
+    .hover-box:hover {
+      transform: translateY(-5px);
+    }
+
+    @keyframes pulse-gentle {
+
+      0%,
+      100% {
+        opacity: 1;
       }
 
-      /* Respect user motion preferences */
-      @media (prefers-reduced-motion: reduce) {
-        .js-scroll-trigger {
-          opacity: 1;
-          transform: none;
-          transition: none;
-        }
+      50% {
+        opacity: 0.3;
+      }
+    }
+
+    .animate-pulse-gentle {
+      animation: pulse-gentle 2s ease-in-out infinite;
+    }
+
+    @keyframes ping-slow {
+      0% {
+        transform: scale(1);
+        opacity: 0.8;
       }
 
-      /* Global Hover Box Effect */
-      .hover-box {
-        transition: transform 0.4s ease-out, box-shadow 0.4s ease-out, border-color 0.3s;
-        will-change: transform;
+      75%,
+      100% {
+        transform: scale(2.5);
+        opacity: 0;
       }
-      
-      .hover-box:hover {
-        transform: translateY(-5px);
+    }
+
+    .animate-ping-slow {
+      animation: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    @keyframes spin-slow {
+      from {
+        transform: rotate(0deg);
       }
 
-      @keyframes pulse-gentle {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.3; }
+      to {
+        transform: rotate(360deg);
       }
-      .animate-pulse-gentle {
-        animation: pulse-gentle 2s ease-in-out infinite;
+    }
+
+    .animate-spin-slow {
+      animation: spin-slow 12s linear infinite;
+    }
+
+    @keyframes fade-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
       }
-      @keyframes ping-slow {
-        0% { transform: scale(1); opacity: 0.8; }
-        75%, 100% { transform: scale(2.5); opacity: 0; }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-      .animate-ping-slow {
-        animation: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    .animate-fade-in-up {
+      animation: fade-in-up 0.8s ease-out forwards;
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
       }
-      @keyframes spin-slow {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
       }
-      .animate-spin-slow {
-        animation: spin-slow 12s linear infinite;
-      }
-      @keyframes fade-in-up {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-      .animate-fade-in-up {
-        animation: fade-in-up 0.8s ease-out forwards;
-      }
-      @keyframes fade-in {
-        from { opacity: 0; transform: scale(0.95); }
-        to { opacity: 1; transform: scale(1); }
-      }
-      .animate-fade-in {
-        animation: fade-in 0.2s ease-out forwards;
-      }
-      /* Fallback/Explicit Brand Colors */
-      .bg-brand-oxford { background-color: #0A1640; }
-      .text-brand-oxford { color: #0A1640; }
-      .border-brand-oxford\/10 { border-color: rgba(10, 22, 64, 0.1); }
-      
-      .bg-brand-azure { background-color: #007DEB; }
-      .text-brand-azure { color: #007DEB; }
-      .border-brand-azure { border-color: #007DEB; }
-      
-      .bg-brand-ghost { background-color: #F0F3F9; }
-      
-      .bg-brand-marian { background-color: #003F88; }
-      .text-brand-marian { color: #003F88; }
-      
-      .text-brand-robin { color: #59C3C3; }
-      
-      /* Dark mode overrides (basic) */
-      .dark .dark\:bg-brand-oxford { background-color: #0A1640; }
-      .dark .dark\:text-white { color: #ffffff; }
-      .dark .dark\:bg-slate-950 { background-color: #020617; }
-    </style>
+    }
+
+    .animate-fade-in {
+      animation: fade-in 0.2s ease-out forwards;
+    }
+
+    /* Fallback/Explicit Brand Colors */
+    .bg-brand-oxford {
+      background-color: #0A1640;
+    }
+
+    .text-brand-oxford {
+      color: #0A1640;
+    }
+
+    .border-brand-oxford\/10 {
+      border-color: rgba(10, 22, 64, 0.1);
+    }
+
+    .bg-brand-azure {
+      background-color: #007DEB;
+    }
+
+    .text-brand-azure {
+      color: #007DEB;
+    }
+
+    .border-brand-azure {
+      border-color: #007DEB;
+    }
+
+    .bg-brand-ghost {
+      background-color: #F0F3F9;
+    }
+
+    .bg-brand-marian {
+      background-color: #003F88;
+    }
+
+    .text-brand-marian {
+      color: #003F88;
+    }
+
+    .text-brand-robin {
+      color: #59C3C3;
+    }
+
+    /* Dark mode overrides (basic) */
+    .dark .dark\:bg-brand-oxford {
+      background-color: #0A1640;
+    }
+
+    .dark .dark\:text-white {
+      color: #ffffff;
+    }
+
+    .dark .dark\:bg-slate-950 {
+      background-color: #020617;
+    }
+  </style>
 </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>

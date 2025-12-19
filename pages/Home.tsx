@@ -9,13 +9,12 @@ import { Stats } from '../components/Stats';
 import { Portfolio } from '../components/Portfolio';
 import { Team } from '../components/Team';
 import { Testimonials } from '../components/Testimonials';
-import { Blog } from '../components/Blog';
 import { FAQ } from '../components/FAQ';
 import { useTranslatedData } from '../hooks/useTranslatedData';
 
 export const Home: React.FC = () => {
   const { faqs } = useTranslatedData();
-  
+
   return (
     <>
       <Hero />
@@ -27,7 +26,6 @@ export const Home: React.FC = () => {
       <Portfolio />
       <Team />
       <Testimonials />
-      <Blog />
       <FAQ items={faqs.home} />
     </>
   );

@@ -15,11 +15,12 @@ export const AboutSection: React.FC = () => {
         <div className="text-center mb-20">
           <Badge className="mb-6">{t('home.about.badge')}</Badge>
           <h2 className="text-4xl lg:text-5xl font-semibold text-brand-oxford dark:text-white mb-6">
-            {t('home.about.title')}
+            {t('home.about.aeoTitle')}
           </h2>
-          <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
-            {t('home.about.desc')}
+          <p className="text-slate-500 dark:text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed font-regular">
+            {t('home.about.aeoDesc')}
           </p>
+
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -34,7 +35,7 @@ export const AboutSection: React.FC = () => {
             </div>
             <h3 className="text-xl font-semibold text-brand-oxford dark:text-white mb-2">{t('home.about.cards.web.title')}</h3>
             <p className="text-sm font-semibold text-brand-azure dark:text-brand-robin mb-3">{t('home.about.cards.web.subtitle')}</p>
-            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 font-regular">
+            <p className="text-slate-500 dark:text-slate-400 text-base leading-relaxed mb-6 font-regular">
               {t('home.about.cards.web.desc')}
             </p>
           </div>
@@ -49,7 +50,7 @@ export const AboutSection: React.FC = () => {
             </div>
             <h3 className="text-xl font-semibold text-brand-oxford dark:text-white mb-2">{t('home.about.cards.marketing.title')}</h3>
             <p className="text-sm font-semibold text-brand-azure dark:text-brand-robin mb-3">{t('home.about.cards.marketing.subtitle')}</p>
-            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 font-regular">
+            <p className="text-slate-500 dark:text-slate-400 text-base leading-relaxed mb-6 font-regular">
               {t('home.about.cards.marketing.desc')}
             </p>
           </div>
@@ -63,7 +64,7 @@ export const AboutSection: React.FC = () => {
             </div>
             <h3 className="text-xl font-semibold text-brand-oxford dark:text-white mb-2">{t('home.about.cards.automation.title')}</h3>
             <p className="text-sm font-semibold text-brand-azure dark:text-brand-robin mb-3">{t('home.about.cards.automation.subtitle')}</p>
-            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 font-regular">
+            <p className="text-slate-500 dark:text-slate-400 text-base leading-relaxed mb-6 font-regular">
               {t('home.about.cards.automation.desc')}
             </p>
           </div>

@@ -147,8 +147,10 @@ export const Hero: React.FC = () => {
               {text}
               {/* Cursor */}
               <span className="w-[3px] h-[0.8em] bg-brand-azure dark:bg-brand-robin animate-pulse ms-1"></span>
-            </span>
+            </span>{" "}
+            {t('hero.title_suffix')}
           </h1>
+
 
           {/* Dynamic Badges Area */}
           <div className="flex flex-wrap justify-center gap-3 lg:gap-4 min-h-[60px]" key={loopNum}>
@@ -186,6 +188,8 @@ export const Hero: React.FC = () => {
               loop
               muted
               playsInline
+              width="1920"
+              height="600"
               className="w-full h-[500px] lg:h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
 
@@ -204,9 +208,9 @@ export const Hero: React.FC = () => {
           {/* Floating Badge - Moved outside overflow-hidden container */}
           <div className="absolute bottom-6 left-6 md:bottom-12 md:left-12 rtl:right-6 rtl:left-auto md:rtl:right-12 flex items-center gap-4 bg-white dark:bg-brand-oxford p-3 pr-8 rtl:pr-3 rtl:pl-8 rounded-3xl border border-brand-oxford/5 dark:border-white/10 shadow-xl scale-75 md:scale-100 origin-bottom-left z-50">
             <div className="flex -space-x-4 rtl:space-x-reverse">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&h=100" className="w-12 h-12 rounded-xl border-[3px] border-white dark:border-brand-oxford object-cover" alt="user" />
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100" className="w-12 h-12 rounded-xl border-[3px] border-white dark:border-brand-oxford object-cover" alt="user" />
-              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100" className="w-12 h-12 rounded-xl border-[3px] border-white dark:border-brand-oxford object-cover" alt="user" />
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&h=100" width="48" height="48" className="w-12 h-12 rounded-xl border-[3px] border-white dark:border-brand-oxford object-cover" alt="user" />
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100" width="48" height="48" className="w-12 h-12 rounded-xl border-[3px] border-white dark:border-brand-oxford object-cover" alt="user" />
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100" width="48" height="48" className="w-12 h-12 rounded-xl border-[3px] border-white dark:border-brand-oxford object-cover" alt="user" />
             </div>
             <div className="flex flex-col justify-center">
               <p className="text-2xl font-bold text-brand-oxford dark:text-white leading-none mb-1">

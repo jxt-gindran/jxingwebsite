@@ -1,5 +1,5 @@
 
-import { ServiceItem, ProjectItem, TeamMember, BlogPost } from './types';
+import { ServiceItem, ProjectItem, TeamMember, BlogPost, CareerOpening } from './types';
 
 export const NAV_LINKS = [
   { label: 'Company', href: '/company' },
@@ -24,7 +24,7 @@ export const SERVICES: ServiceItem[] = [
       "Enterprise-grade security",
       "Conversion-optimized layouts"
     ],
-    offerings: [], 
+    offerings: [],
     subServices: [
       {
         id: 'corporate-website',
@@ -453,33 +453,72 @@ export const TEAM: TeamMember[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    id: 'featured',
-    title: 'Top Digital Agency Case Studies in Web3 Marketing',
-    category: 'COMPANY',
-    date: '20 NOV 2024',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop',
-    isFeatured: true
-  },
-  {
     id: '1',
-    title: 'Why Personalization is the Future of Digital Advertising',
-    category: 'LIFESTYLE',
-    date: '20 NOV 2024',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop'
+    title: '10 Essential SEO Strategies for SMEs in 2024',
+    category: 'SEO',
+    date: 'Dec 15, 2024',
+    image: 'https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=2070&auto=format&fit=crop',
+    isFeatured: true,
+    excerpt: 'Discover the latest SEO techniques that are driving real results for small and medium enterprises. Learn how to outrank your competitors and increase organic traffic.',
+    author: 'Sarah Chen',
+    readTime: '8 min read',
+    tags: ['SEO', 'SME', 'Organic Traffic']
   },
   {
     id: '2',
-    title: 'Top Crypto Exchange Influencers in Hong Kong',
-    category: 'SOCIAL MEDIA',
-    date: '20 NOV 2024',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop'
+    title: 'How AI Automation Can Transform Your Customer Service',
+    category: 'AI',
+    date: 'Dec 12, 2024',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop',
+    isFeatured: true,
+    excerpt: 'Learn how artificial intelligence is revolutionizing customer support and reducing operational costs. Discover practical AI tools you can implement today.',
+    author: 'Marcus Wong',
+    readTime: '12 min read',
+    tags: ['AI', 'Automation', 'Customer Service']
   },
   {
     id: '3',
-    title: 'Top UI/UX Design Trends for 2024',
-    category: 'LIFESTYLE',
-    date: '20 NOV 2024',
-    image: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2070&auto=format&fit=crop'
+    title: 'Maximizing ROI from Paid Advertising Campaigns',
+    category: 'PAID ADS',
+    date: 'Dec 10, 2024',
+    image: 'https://images.unsplash.com/photo-1557838433-441f9c7423f8?q=80&w=2036&auto=format&fit=crop',
+    excerpt: 'Deep dive into performance marketing strategies that actually convert. From Meta ads to Google Search, learn how to optimize your ad spend.',
+    author: 'David Kim',
+    readTime: '10 min read',
+    tags: ['PPC', 'ROI', 'Digital Marketing']
+  },
+  {
+    id: '4',
+    title: 'Modern Web Design Trends for Corporate Websites',
+    category: 'WEBSITE DESIGN',
+    date: 'Dec 08, 2024',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop',
+    excerpt: 'What makes a website stand out in 2024? We explore the intersection of aesthetics and functionality in current corporate web design.',
+    author: 'Elena Rossi',
+    readTime: '7 min read',
+    tags: ['Web Design', 'UX', 'Corporate']
+  },
+  {
+    id: '5',
+    title: 'The Power of Content Marketing in Building Brand Authority',
+    category: 'CONTENT MARKETING',
+    date: 'Dec 05, 2024',
+    image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop',
+    excerpt: 'Content is king, but strategy is queen. Learn how to create a content engine that builds trust and establishes your brand as an industry leader.',
+    author: 'Jessica Low',
+    readTime: '9 min read',
+    tags: ['Content Strategy', 'Branding', 'Authority']
+  },
+  {
+    id: '6',
+    title: 'Automation Workflows for E-Commerce Efficiency',
+    category: 'AUTOMATION',
+    date: 'Dec 01, 2024',
+    image: 'https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?q=80&w=1974&auto=format&fit=crop',
+    excerpt: 'Scale your online store without scaling your workload. Discover the essential automations every e-commerce business needs to save time.',
+    author: 'Michael Tan',
+    readTime: '11 min read',
+    tags: ['E-Commerce', 'Workflow', 'Scaling']
   }
 ];
 
@@ -493,30 +532,82 @@ export const PRICING_PLANS = {
   automation: { category: '', tagline: '', plans: [] }
 };
 
-export const CAREER_OPENINGS = [
+export const CAREER_OPENINGS: CareerOpening[] = [
   {
-    title: "Digital Marketing Excutive",
-    location: "Miami",
+    title: "Digital Marketing Executive",
+    location: "Kuala Lumpur (Hybrid)",
     type: "Full time",
-    description: "We help transform the world's most important businesses into vigorous, agile organizations that anticipate the unpredictable, adapt rapidly to disruption and outcompete their opposition. We work with clients who do not hide from the future but want to define it."
+    hours: "09:00 am - 06:00 pm",
+    description: "We help transform the world's most important businesses into vigorous, agile organizations that anticipate the unpredictable, adapt rapidly to disruption and outcompete their opposition.",
+    responsibilities: [
+      "Develop and execute end-to-end digital marketing campaigns across Meta, Google, and TikTok.",
+      "Analyze campaign performance data to optimize ROI and lead generation metrics.",
+      "Collaborate with the creative team to produce high-converting ad copies and visual assets.",
+      "Manage client marketing budgets and provide transparent weekly reporting."
+    ],
+    requirements: [
+      "2+ years of experience in performance marketing or digital strategy.",
+      "Proven track record of managing monthly ad spend exceeding RM10k.",
+      "Strong analytical skills and experience with Google Analytics 4.",
+      "Excellent communication skills in English and Bahasa Melayu."
+    ]
   },
   {
     title: "Platform Support Specialist",
-    location: "Miami",
+    location: "Remote",
     type: "Full time",
-    description: "Whatever your ambition may be from embracing new digital capabilities to reimagining how your business operates, we can help you set a new standard of excellence and achieve unprecedented levels of value."
+    hours: "09:00 am - 06:00 pm",
+    description: "Whatever your ambition may be from embracing new digital capabilities to reimagining how your business operates, we can help you set a new standard of excellence.",
+    responsibilities: [
+      "Provide second-tier technical support for our proprietary automation platforms.",
+      "Troubleshoot API integrations and workflow errors for enterprise clients.",
+      "Liaise with the development team to report bugs and suggest feature improvements.",
+      "Maintain high client satisfaction scores through timely and effective communication."
+    ],
+    requirements: [
+      "Experience with low-code/no-code tools (Zapier, Make.com) and API structures.",
+      "Strong problem-solving mindset and ability to debug complex logical flows.",
+      "Prior experience in B2B SaaS support is a major plus.",
+      "Availability to work within the GMT+8 timezone."
+    ]
+  },
+  {
+    title: "React JS Developer",
+    location: "Kuala Lumpur (Hybrid)",
+    type: "Full time",
+    hours: "09:00 am - 06:00 pm",
+    description: "We are a global technology provider who assists businesses to accelerate their digital transformation journey while achieving efficiency, scalability, and lower cost of ownership.",
+    responsibilities: [
+      "Develop and maintain high-performance web applications using React and Tailwind CSS.",
+      "Implement responsive UI components based on Figma designs.",
+      "Optimize web applications for maximum speed and scalability.",
+      "Collaborate with backend developers to integrate RESTful APIs."
+    ],
+    requirements: [
+      "3+ years of professional experience with React.js and modern frontend ecosystems.",
+      "Strong proficiency in TypeScript and state management (Zustand, Redux).",
+      "Experience with Framer Motion and modern animation libraries.",
+      "Deep understanding of responsive design and web performance optimization."
+    ]
   },
   {
     title: "Cloud Ops Administrator",
-    location: "Las Vegas",
+    location: "Kuala Lumpur (On-site)",
     type: "Full time",
-    description: "A preeminent provider of strategic marketing consulting services, driven by a fervent commitment to assisting businesses in unlocking their complete potential and attaining remarkable growth within the current dynamic and competitive marketplace."
-  },
-  {
-    title: "React Js Developer",
-    location: "Rome",
-    type: "Full time",
-    description: "We are a global technology provider who assists businesses to accelerate their digital transformation journey while achieving efficiency, scalability, and lower cost of ownership. Our team can assist you in transforming your business through latest tech capabilities."
+    hours: "09:00 am - 06:00 pm",
+    description: "A preeminent provider of strategic marketing consulting services, driven by a fervent commitment to assisting businesses in unlocking their complete potential.",
+    responsibilities: [
+      "Manage and monitor AWS/GCP cloud environments for high availability.",
+      "Configure and maintain CI/CD pipelines for automated deployment.",
+      "Implement robust security protocols and regular infrastructure audits.",
+      "Optimize cloud costs while maintaining peak system performance."
+    ],
+    requirements: [
+      "Certified AWS SysOps or Solutions Architect Associate preferred.",
+      "Experience with Docker, Kubernetes, and Infrastructure as Code (Terraform).",
+      "Strong background in Linux server administration and networking.",
+      "Proficiency in scripting languages like Python or Bash for automation."
+    ]
   }
 ];
 

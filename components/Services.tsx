@@ -24,7 +24,8 @@ export const Services: React.FC = () => {
               {t('services.badge')}
             </Badge>
           </div>
-          <h2 className="text-4xl lg:text-6xl font-semibold">{t('services.title')}</h2>
+          <h2 className="text-4xl lg:text-6xl font-semibold">{t('services.aeoTitle')}</h2>
+
         </div>
 
         <div className="flex flex-col lg:flex-row gap-16 items-start">

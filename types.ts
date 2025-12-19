@@ -45,4 +45,17 @@ export interface BlogPost {
   date: string;
   image: string;
   isFeatured?: boolean;
+  excerpt?: string;
+  author?: string;
+  readTime?: string;
+  tags?: string[];
+}
+export interface CareerOpening {
+  title: string;
+  location: string;
+  type: string;
+  description: string;
+  responsibilities?: string[];
+  requirements?: string[];
+  hours?: string;
 }

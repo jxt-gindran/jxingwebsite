@@ -1,0 +1,16 @@
+# JXING Tech - Digital Agency
+
+JXING Tech is a leading digital agency based in Malaysia, specializing in web development, e-commerce, AI automation, and performance marketing.
+
+## Core Services
+- **Web & E-Commerce**: High-performance websites built for conversion.
+- **Workflow Automation**: AI-driven tools to optimize business operations.
+- **Marketing & Growth**: SEO, SEM, and social media strategies.
+
+## Contact Information
+- Website: https://jxingtech.my
+- Email: hello@jxingtech.my
+- Location: Kuala Lumpur, Malaysia
+
+## Full Documentation
+For a full list of services and case studies, please visit https://jxingtech.my/services.

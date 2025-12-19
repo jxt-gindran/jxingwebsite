@@ -12,10 +12,10 @@ export const News: React.FC = () => {
 
   return (
     <>
-      <PageHeader 
-        title={t('pages.news.title')} 
+      <PageHeader
+        title={t('pages.news.title')}
         subtitle={t('pages.news.subtitle')}
-        badge={t('pages.news.badge')}
+        image="https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2021&auto=format&fit=crop"
       />
       <Blog />
       <FAQ items={faqs.news} />

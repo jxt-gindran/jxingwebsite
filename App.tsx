@@ -26,6 +26,7 @@ import { Career } from './pages/Career';
 import { NotFound } from './pages/NotFound';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
+import { Help } from './pages/Help';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -42,22 +43,15 @@ const Layout = () => {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    // If a language param exists and is valid
-    if (lang && LANGUAGES.some(l => l.code === lang)) {
-      if (i18n.language !== lang) {
-        i18n.changeLanguage(lang);
-        const dir = LANGUAGES.find(l => l.code === lang)?.dir || 'ltr';
-        document.documentElement.dir = dir;
-        document.documentElement.lang = lang;
-      }
-    } else {
-      // Default to English if no lang param (root path)
-      if (i18n.language !== 'en') {
-        i18n.changeLanguage('en');
-        document.documentElement.dir = 'ltr';
-        document.documentElement.lang = 'en';
-      }
+    const currentLang = (lang && LANGUAGES.some(l => l.code === lang)) ? lang : 'en';
+
+    if (i18n.language !== currentLang) {
+      i18n.changeLanguage(currentLang);
     }
+
+    const dir = LANGUAGES.find(l => l.code === currentLang)?.dir || 'ltr';
+    document.documentElement.dir = dir;
+    document.documentElement.lang = currentLang;
   }, [lang, i18n]);
 
   return (
@@ -85,6 +79,7 @@ const routeConfig = [
   { path: "news", element: <News /> },
   { path: "contact", element: <Contact /> },
   { path: "career", element: <Career /> },
+  { path: "help", element: <Help /> },
   { path: "privacy-policy", element: <PrivacyPolicy /> },
   { path: "terms-of-service", element: <TermsOfService /> },
   { path: "*", element: <NotFound /> },

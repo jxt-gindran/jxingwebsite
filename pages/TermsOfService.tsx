@@ -8,12 +8,12 @@ export const TermsOfService: React.FC = () => {
 
   return (
     <>
-      <PageHeader 
-        title={t('legal.terms.title')} 
+      <PageHeader
+        title={t('legal.terms.title')}
         subtitle={t('legal.terms.subtitle')}
         badge="Legal"
       />
-      
+
       <section className="py-24 bg-white dark:bg-brand-oxford transition-colors duration-300">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="prose prose-lg prose-slate dark:prose-invert max-w-none">
@@ -23,14 +23,14 @@ export const TermsOfService: React.FC = () => {
 
             <h3 className="text-2xl font-bold text-brand-oxford dark:text-white mb-4">1. Terms</h3>
             <p className="text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
-              By accessing the website at jxing.tech, you are agreeing to be bound by these terms of service, all applicable laws and regulations, 
-              and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, 
+              By accessing the website at jxingtech.my, you are agreeing to be bound by these terms of service, all applicable laws and regulations,
+              and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms,
               you are prohibited from using or accessing this site.
             </p>
 
             <h3 className="text-2xl font-bold text-brand-oxford dark:text-white mb-4">2. Use License</h3>
             <p className="text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
-              Permission is granted to temporarily download one copy of the materials (information or software) on JXING Tech's website for personal, 
+              Permission is granted to temporarily download one copy of the materials (information or software) on JXING Tech's website for personal,
               non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
               <ul className="list-disc pl-6 mt-4 space-y-2">
                 <li>modify or copy the materials;</li>
@@ -43,20 +43,20 @@ export const TermsOfService: React.FC = () => {
 
             <h3 className="text-2xl font-bold text-brand-oxford dark:text-white mb-4">3. Disclaimer</h3>
             <p className="text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
-              The materials on JXING Tech's website are provided on an 'as is' basis. JXING Tech makes no warranties, expressed or implied, 
-              and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, 
+              The materials on JXING Tech's website are provided on an 'as is' basis. JXING Tech makes no warranties, expressed or implied,
+              and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability,
               fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
             </p>
 
             <h3 className="text-2xl font-bold text-brand-oxford dark:text-white mb-4">4. Limitations</h3>
             <p className="text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
-              In no event shall JXING Tech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, 
+              In no event shall JXING Tech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit,
               or due to business interruption) arising out of the use or inability to use the materials on JXING Tech's website.
             </p>
 
             <h3 className="text-2xl font-bold text-brand-oxford dark:text-white mb-4">5. Governing Law</h3>
             <p className="text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
-              These terms and conditions are governed by and construed in accordance with the laws of Malaysia and you irrevocably 
+              These terms and conditions are governed by and construed in accordance with the laws of Malaysia and you irrevocably
               submit to the exclusive jurisdiction of the courts in that location.
             </p>
 
@@ -65,21 +65,21 @@ export const TermsOfService: React.FC = () => {
               <div>
                 <h4 className="text-lg font-bold text-brand-oxford dark:text-white mb-2">Website & Software Development</h4>
                 <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                  Full ownership of the website or software source code transfers to the client only upon full payment of the agreed fees. 
+                  Full ownership of the website or software source code transfers to the client only upon full payment of the agreed fees.
                   Payments are milestone-based (typically 40/40/20) or upfront for smaller packages. Fees exclude government taxes, copywriting, and advanced SEO unless specified.
                 </p>
               </div>
               <div>
                 <h4 className="text-lg font-bold text-brand-oxford dark:text-white mb-2">Subscription & Retainer Services (SEO, Social, Ads)</h4>
                 <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                  Monthly services such as SEO, Social Media Management, and Maintenance are billed on a recurring subscription basis. 
+                  Monthly services such as SEO, Social Media Management, and Maintenance are billed on a recurring subscription basis.
                   Cancellations require a 30-day written notice. All creative assets designed during the term belong to the client after payment.
                 </p>
               </div>
               <div>
                 <h4 className="text-lg font-bold text-brand-oxford dark:text-white mb-2">Performance Advertising</h4>
                 <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                  Management fees do not include the advertising budget (ad spend) payable directly to platforms like Google or Meta. 
+                  Management fees do not include the advertising budget (ad spend) payable directly to platforms like Google or Meta.
                   We require a minimum 3-month engagement to allow for data gathering and campaign optimization.
                 </p>
               </div>
