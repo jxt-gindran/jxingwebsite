@@ -1,5 +1,5 @@
 
-import { ServiceItem, ProjectItem, TeamMember, BlogPost, CareerOpening } from './types';
+import { ServiceItem, ProjectItem, TeamMember, BlogPost, CareerOpening, CaseStudy } from './types';
 
 export const NAV_LINKS = [
   { label: 'Company', href: '/company' },
@@ -421,27 +421,345 @@ export const SERVICES: ServiceItem[] = [
 export const PROJECTS: ProjectItem[] = [
   {
     id: '1',
-    title: 'UI/UX Design Platform',
-    category: 'Advanced Analytics',
+    title: 'Back2Basics (HR & Training)',
+    category: 'Building Digital Authority for HR Experts',
     image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974&auto=format&fit=crop'
   },
   {
     id: '2',
-    title: 'Social Media Campaigns',
-    category: 'Design',
+    title: 'Borneo International Marathon',
+    category: 'Digitally Ahead, Every Step of the Way',
     image: 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1974&auto=format&fit=crop'
   },
   {
     id: '3',
-    title: 'Content Marketing Suite',
+    title: 'Thurai Dental',
     category: 'Development',
     image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop'
   },
   {
     id: '4',
-    title: 'SEO & Marketing Tools',
+    title: 'Scaling Dental Trust & Appointments, 24/7',
     category: 'Advanced Analytics',
     image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop'
+  },
+   {
+    id: '5',
+    title: 'Gibb & Co Lawyers',
+    category: 'Legacy Meets Modern Authority',
+    image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop'
+  },
+  {
+    id: '6',
+    title: 'Evo House Singapore',
+    category: 'Redefining Premium Living',
+    image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=2069&auto=format&fit=crop'
+  },
+];
+
+export const CASE_STUDIES: CaseStudy[] = [
+  {
+    id: '1',
+    title: 'Back2Basics',
+    subtitle: 'Building Digital Authority for HR Experts',
+    category: 'HR & Training',
+    heroImage: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop',
+    beforeImage: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop',
+    afterImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
+    industry: 'Corporate Training & HR Consulting',
+    duration: '8 weeks',
+    year: '2024',
+    struggle: {
+      headline: 'Stuck in the Filing Cabinet',
+      description: 'The old site felt like a static noticeboard. It listed services but didn\'t capture the dynamic energy of modern corporate training.',
+      painPoints: [
+        {
+          title: 'Hidden Costs',
+          description: '3.2s load times and disjointed branding leading to high bounce rates.'
+        },
+        {
+          title: 'Identity Gap',
+          description: 'A top-tier consultancy looking like a low-profile service provider.'
+        },
+        {
+          title: 'Passive Engagement',
+          description: 'Static contact forms resulting in lost lead opportunities.'
+        }
+      ]
+    },
+    solution: {
+      description: 'The JXING Tech intervention involved a complete technical and strategic overhaul. We implemented technical upgrades achieving 1.0s load speeds and 0.00ms interaction lag. We introduced a deep navigation hierarchy (ESG, Lean Management, HRDC training) and replaced passive forms with high-conversion Direct WhatsApp Integration and "Consult Now" CTAs.',
+      highlights: [
+        'Technical upgrades achieving 1.0s load speeds and 0.00ms interaction lag',
+        'Deep navigation hierarchy (ESG, Lean Management, HRDC training)',
+        'Replaced passive forms with high-conversion Direct WhatsApp Integration',
+        '"Consult Now" CTAs strategically placed throughout the user journey'
+      ]
+    },
+    stats: [
+      { value: '+74%', label: 'Organic Clicks' },
+      { value: '+61%', label: 'Monthly Engagement' },
+      { value: '+43%', label: 'New User Acquisition' }
+    ],
+    verdict: {
+      analogy: 'The "Office Upgrade" Analogy',
+      quote: 'This was like moving from a hidden alleyway office to a state-of-the-art, glass-fronted consultancy in the heart of the business district.',
+      tagline: 'HR isn\'t boring. Your website shouldn\'t be either.'
+    },
+    ctaText: 'View the Transformation',
+    services: ['Website Solutions', 'SEO', 'Performance Optimization']
+  },
+  {
+    id: '2',
+    title: 'Borneo International Marathon',
+    subtitle: 'Digitally Ahead, Every Step of the Way',
+    category: 'Sports & Events',
+    heroImage: 'https://images.unsplash.com/photo-1513593771513-7b58b6c4af38?q=80&w=2072&auto=format&fit=crop',
+    beforeImage: 'https://images.unsplash.com/photo-1461896836934-28e377c37b09?q=80&w=2070&auto=format&fit=crop',
+    afterImage: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop',
+    industry: 'Sports Events',
+    duration: '6 weeks',
+    year: '2024',
+    struggle: {
+      headline: 'Digital Plateau',
+      description: 'Despite being a well-loved event with a stunning island setting, the marathon faced a "digital plateau". Organizers struggled with visibility due to an outdated site with slow loading speeds and critical technical HTML errors, causing a drop in registrations.',
+      painPoints: [
+        {
+          title: 'Digital Plateau',
+          description: 'Lack of cohesion across touchpoints created an unintuitive user experience.'
+        },
+        {
+          title: 'Performance Issues',
+          description: 'Outdated optimization led to slow loading speeds and code errors.'
+        },
+        {
+          title: 'Visibility Gap',
+          description: 'Struggled with year-round visibility for international markets.'
+        }
+      ]
+    },
+    solution: {
+      description: 'We implemented a strategic four-phase methodology: Performance Engineering (achieving 50ms response speed), UX & Navigation restructuring, Content Strategy with consistent branding, and Technical Stability (0.00 mobile layout shift).',
+      highlights: [
+        'Performance Engineering achieving 50ms response speed',
+        'UX & Navigation restructuring for intuitive user journey',
+        'Content Strategy with consistent branding across all touchpoints',
+        'Technical Stability with 0.00 mobile layout shift'
+      ]
+    },
+    stats: [
+      { value: '+60.16%', label: 'Monthly Engagement' },
+      { value: '75', label: 'On-Page SEO Score' },
+      { value: '0.00', label: 'Visual Stability' }
+    ],
+    verdict: {
+      analogy: 'World-Class Digital Platform',
+      quote: 'By redefining their digital infrastructure, we helped transform a regional favorite into a high-visibility destination marathon. The event now possesses a world-class digital platform that matches the prestige of the race itself.',
+      tagline: 'We handled the traffic so they could handle the race.'
+    },
+    ctaText: 'See the Finish Line',
+    services: ['Website Solutions', 'SEO', 'Performance Optimization']
+  },
+  {
+    id: '3',
+    title: 'Thurai Dental',
+    subtitle: 'Scaling Dental Trust & Appointments, 24/7',
+    category: 'Healthcare',
+    heroImage: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop',
+    beforeImage: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop',
+    afterImage: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2074&auto=format&fit=crop',
+    industry: 'Dental Healthcare',
+    duration: '10 weeks',
+    year: '2024',
+    struggle: {
+      headline: 'Digital Front Door Was Locked',
+      description: 'Clinical expertise was never the issue—visibility was. While they were busy restoring smiles in the chair, their digital presence was causing friction. In an industry where trust is the primary currency, their "digital front door" was locked.',
+      painPoints: [
+        {
+          title: 'Non-Responsive Interface',
+          description: 'Non-responsive interface making it difficult for patients on-the-go.'
+        },
+        {
+          title: 'Missing Clinical Warmth',
+          description: 'Clinical warmth missing online; digital presence didn\'t match physical excellence.'
+        },
+        {
+          title: 'Friction-Heavy Navigation',
+          description: 'Friction-heavy navigation making service details hard to find.'
+        }
+      ]
+    },
+    solution: {
+      description: 'We built a high-performance patient acquisition engine. By implementing a Medical-Grade UI with trust-inducing blues and whites, and re-engineering the UX for a "2-click" path to consultation, we turned a static site into a 24/7 digital receptionist.',
+      highlights: [
+        'Medical-Grade UI with trust-inducing blues and whites',
+        'Re-engineered UX for a "2-click" path to consultation',
+        'Transformed static site into a 24/7 digital receptionist',
+        'Optimized for mobile-first patient experience'
+      ]
+    },
+    stats: [
+      { value: '+52%', label: 'Booking Inquiry' },
+      { value: '100%', label: 'Mobile Accessibility' },
+      { value: 'Elite', label: 'Trust Index' }
+    ],
+    verdict: {
+      analogy: 'Trust Starts Before the First Appointment',
+      quote: 'A dental practice is only as strong as the trust it inspires. By modernizing their digital footprint, we ensured that Thurai Dental\'s online experience now mirrors their physical excellence.',
+      tagline: 'Trust starts before the first appointment.'
+    },
+    ctaText: 'View the Transformation',
+    services: ['Website Solutions', 'UX Design', 'Performance Optimization']
+  },
+  {
+    id: '5',
+    title: 'Gibb & Co Lawyers',
+    subtitle: 'Legacy Meets Modern Authority',
+    category: 'Legal',
+    heroImage: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop',
+    beforeImage: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop',
+    afterImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
+    industry: 'Legal Services',
+    duration: '12 weeks',
+    year: '2024',
+    struggle: {
+      headline: 'Static Brochure Instead of Modern Front Door',
+      description: 'Gibb & Co, a law firm established in 1892, had a website that didn\'t reflect its heritage or support growth. Their digital presence felt like a static brochure rather than a modern front door.',
+      painPoints: [
+        {
+          title: 'SEO Issues',
+          description: 'Generic pages with weak keyword targeting and limited structure.'
+        },
+        {
+          title: 'Poor UX',
+          description: 'Text-heavy layout requiring multiple clicks to find lawyers or services.'
+        },
+        {
+          title: 'Underpowered Branding',
+          description: 'The "EST. 1892" legacy was hidden behind generic messaging.'
+        },
+        {
+          title: 'Low Conversions',
+          description: 'No clear funnels for appointments or instant channels like WhatsApp.'
+        }
+      ]
+    },
+    solution: {
+      description: 'We rebuilt gibblawyers.com into a conversion engine. We introduced a structured WordPress architecture for better SEO, designed three primary homepage funnels for lawyers, services, and appointments, and brought their 130+ year legacy to the forefront with outcome-driven messaging and multiple low-friction enquiry paths.',
+      highlights: [
+        'Structured WordPress architecture for better SEO',
+        'Three primary homepage funnels: lawyers, services, and appointments',
+        'Brought 130+ year legacy to the forefront with outcome-driven messaging',
+        'Multiple low-friction enquiry paths including WhatsApp'
+      ]
+    },
+    stats: [
+      { value: 'Proprietary', label: 'Search Visibility' },
+      { value: '1-Click', label: 'User Journey' },
+      { value: 'Est. 1892', label: 'Heritage Focus' }
+    ],
+    verdict: {
+      analogy: 'Old School Values. New School Presence.',
+      quote: 'By unifying SEO, UX, branding, and conversion design, JXINGTECH transformed Gibb & Co\'s website from a static brochure into a modern, high-performing digital front door—turning a 130+ year legacy into measurable online opportunity.',
+      tagline: 'Old school values. New school presence.'
+    },
+    ctaText: 'View the Transformation',
+    services: ['Website Solutions', 'SEO', 'Branding', 'Conversion Optimization']
+  },
+  {
+    id: '6',
+    title: 'Evo House Singapore',
+    subtitle: 'Redefining Premium Living',
+    category: 'Student Accommodation',
+    heroImage: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=2069&auto=format&fit=crop',
+    beforeImage: 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1974&auto=format&fit=crop',
+    afterImage: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974&auto=format&fit=crop',
+    industry: 'Student Accommodation',
+    duration: '30 days',
+    year: '2024',
+    struggle: {
+      headline: 'No Digital Bridge to Students',
+      description: 'Evo House is a premium student accommodation provider in Singapore, but they lacked a digital bridge to their primary audience: international students.',
+      painPoints: [
+        {
+          title: 'Absolute Zero Start',
+          description: 'No followers, no content history, and zero brand recognition on social media.'
+        },
+        {
+          title: 'Dual-Audience Messaging',
+          description: 'Balancing trendy student lifestyle with safety reassurance for parents.'
+        },
+        {
+          title: 'Time-Sensitive Launch',
+          description: 'Launched in December to capture the massive Jan/Feb student intake.'
+        }
+      ]
+    },
+    solution: {
+      description: 'We deployed a Reels-first approach to break the algorithm cold-start, with a strategic content mix: 30% Lead Gen & Brand Story, 25% Educational Awareness, 25% Safety & Comfort, and 20% Community & Lifestyle.',
+      highlights: [
+        'End-to-end Social Strategy with @evohouse.sg handle setup',
+        'High-conversion Content Production focused on Reels',
+        'Community Building & Migration from zero followers',
+        'Real-time Analytics & Reporting with weekly optimization',
+        'Caregiver spotlights addressing parent safety concerns'
+      ]
+    },
+    stats: [
+      { value: '5,300+', label: 'Total Views' },
+      { value: '2,436', label: 'Unique Reach' },
+      { value: '210', label: 'Interactions' }
+    ],
+    verdict: {
+      analogy: 'The "Cold Start" Breakthrough',
+      quote: 'Building an organic Instagram presence from zero to thousands of impressions in just 30 days during a critical peak season. 72.5% of total views came from non-followers, validating our investment in short-form video discovery.',
+      tagline: 'From absolute zero to algorithm domination.'
+    },
+    ctaText: 'View the Campaign',
+    services: ['Social Media Management', 'Content Production', 'Community Building'],
+    // Extended data for interactive case study
+    extendedData: {
+      handle: '@evohouse.sg',
+      overviewMetrics: [
+        { label: 'Total Views', value: '5,300+', sublabel: '100% Organic' },
+        { label: 'Total Reach', value: '2,436', sublabel: 'Unique Accounts' },
+        { label: 'Follower Growth', value: '29', sublabel: 'From Absolute Zero' },
+        { label: 'Interactions', value: '210', sublabel: 'Engagement Surge' }
+      ],
+      contentPillars: [
+        { title: 'Educational Awareness', percentage: 25, description: 'Survival guides, transport hacks, and local culture for new students.', color: '#38bdf8' },
+        { title: 'Safety & Comfort', percentage: 25, description: 'Addressing parent concerns with caregiver spotlights and security features.', color: '#2dd4bf' },
+        { title: 'Lead Gen & Brand Story', percentage: 30, description: 'Direct conversions through promos and transparency behind the brand.', color: '#f97316' },
+        { title: 'Community & Lifestyle', percentage: 20, description: 'Showcasing the vibrant social life and student testimonials.', color: '#c084fc' }
+      ],
+      topPosts: [
+        { title: 'Care Doesn\'t Clock Out', format: 'Reel', theme: 'Safety & Comfort', views: 345, likes: 6 },
+        { title: 'Dinner Vibes & Good Food', format: 'Reel', theme: 'Community', views: 328, likes: 9 },
+        { title: 'MRT & Location Guide', format: 'Reel', theme: 'Educational', views: 287, likes: 8 }
+      ],
+      growthChart: [
+        { name: 'Dec 1', value: 0 },
+        { name: 'Dec 7', value: 8 },
+        { name: 'Dec 14', value: 15 },
+        { name: 'Dec 21', value: 22 },
+        { name: 'Dec 29', value: 29 }
+      ],
+      impressionsChart: [
+        { name: 'Week 1', value: 1850 },
+        { name: 'Week 2', value: 1200 },
+        { name: 'Week 3', value: 1050 },
+        { name: 'Week 4', value: 1192 }
+      ],
+      strategicWins: [
+        { title: 'Reels Dominance', description: '72.5% of total views came from non-followers, validating our investment in short-form video discovery.' },
+        { title: 'The Caregiver Edge', description: 'Content spotlighting 24/7 support had the highest \'Save\' rate, confirming safety as the primary driver.' }
+      ],
+      reportSummary: {
+        followerGrowth: '100% Organic',
+        avgEngagement: 'Above Benchmarks',
+        discoveryRate: '72.5% Non-Followers'
+      }
+    }
   }
 ];
 

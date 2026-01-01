@@ -13,8 +13,8 @@ export const CaseStudies: React.FC = () => {
 
   return (
     <>
-      <PageHeader 
-        title={t('pages.caseStudies.title')} 
+      <PageHeader
+        title={t('pages.caseStudies.title')}
         subtitle={t('pages.caseStudies.subtitle')}
         badge={t('pages.caseStudies.badge')}
       />

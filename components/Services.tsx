@@ -76,7 +76,7 @@ export const Services: React.FC = () => {
                         <p className="text-slate-400 leading-relaxed mb-6 max-w-md font-regular">
                           {service.description}
                         </p>
-                        <div className="flex gap-2 flex-wrap">
+                        <div className="flex gap-2 flex-wrap mb-6">
                           {/* Render Navigation Items as Tag Pills */}
                           {service.tags && service.tags.map((tag, i) => (
                             <span key={i} className="px-3 py-1 rounded-lg border border-white/20 text-xs text-slate-300 hover:border-brand-vermilion hover:text-brand-vermilion transition-colors cursor-default">
@@ -84,6 +84,16 @@ export const Services: React.FC = () => {
                             </span>
                           ))}
                         </div>
+                        {/* Navigate to Service Detail Button */}
+                        <Link
+                          to={`/${lang}/services/${service.id}`}
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-block mt-2"
+                        >
+                          <Button variant="wipe-white">
+                            {t('common.learnMore')}
+                          </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>

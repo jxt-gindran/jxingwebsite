@@ -1,13 +1,28 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Badge } from './ui/Badge';
 import { Button } from './ui/Button';
 import { useTranslatedData } from '../hooks/useTranslatedData';
 import { useTranslation } from 'react-i18next';
+import { CASE_STUDIES } from '../constants';
 
 export const Portfolio: React.FC = () => {
   const { projects } = useTranslatedData();
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
+  // Map project IDs to case study IDs for navigation
+  const handleProjectClick = (projectId: string) => {
+    // Check if there's a matching case study
+    const caseStudy = CASE_STUDIES.find(cs => cs.id === projectId);
+    if (caseStudy) {
+      navigate(`/case-studies/${projectId}`);
+    } else {
+      // Navigate to general case studies page if no specific case study exists
+      navigate('/case-studies');
+    }
+  };
 
   return (
     <section className="py-24 bg-white dark:bg-brand-oxford transition-colors duration-300">
@@ -24,14 +39,18 @@ export const Portfolio: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {projects.map((project, idx) => (
-            <div key={project.id || idx} className="group relative rounded-3xl overflow-hidden aspect-[16/10] cursor-pointer border border-brand-oxford/10 dark:border-white/10 transition-all duration-300 hover:-translate-y-1">
-               <img 
-                 src={project.image} 
-                 alt={project.title} 
+            <div
+              key={project.id || idx}
+              className="group relative rounded-3xl overflow-hidden aspect-[16/10] cursor-pointer border border-brand-oxford/10 dark:border-white/10 transition-all duration-300 hover:-translate-y-1"
+              onClick={() => handleProjectClick(project.id)}
+            >
+               <img
+                 src={project.image}
+                 alt={project.title}
                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                />
                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
-               
+
                <div className="absolute bottom-0 left-0 right-0 p-10">
                   <h3 className="text-2xl font-bold text-white mb-1">{project.title}</h3>
                   <p className="text-slate-300 text-sm font-medium">{project.category}</p>
@@ -46,7 +65,12 @@ export const Portfolio: React.FC = () => {
         </div>
 
         <div className="flex justify-center">
-           <Button variant="outline" icon="arrow-right" className="text-xs font-bold uppercase tracking-wider px-8">
+           <Button
+             variant="outline"
+             icon="arrow-right"
+             className="text-xs font-bold uppercase tracking-wider px-8"
+             onClick={() => navigate('/case-studies')}
+           >
              {t('home.portfolio.viewAll')}
            </Button>
         </div>

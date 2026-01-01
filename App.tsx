@@ -27,6 +27,7 @@ import { NotFound } from './pages/NotFound';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
 import { Help } from './pages/Help';
+import { CaseStudyDetail } from './pages/CaseStudyDetail';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -76,6 +77,7 @@ const routeConfig = [
   { path: "services/:id/:subId", element: <SubServiceDetail /> },
   { path: "pricing", element: <Pricing /> },
   { path: "case-studies", element: <CaseStudies /> },
+  { path: "case-studies/:id", element: <CaseStudyDetail /> },
   { path: "news", element: <News /> },
   { path: "contact", element: <Contact /> },
   { path: "career", element: <Career /> },

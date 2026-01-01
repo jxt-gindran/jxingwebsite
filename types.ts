@@ -59,3 +59,91 @@ export interface CareerOpening {
   requirements?: string[];
   hours?: string;
 }
+
+export interface CaseStudyPainPoint {
+  title: string;
+  description: string;
+}
+
+export interface CaseStudyStat {
+  value: string;
+  label: string;
+}
+
+export interface CaseStudyMetric {
+  label: string;
+  value: string;
+  sublabel: string;
+}
+
+export interface CaseStudyContentPillar {
+  title: string;
+  percentage: number;
+  description: string;
+  color: string;
+}
+
+export interface CaseStudyTopPost {
+  title: string;
+  format: string;
+  theme: string;
+  views: number;
+  likes: number;
+}
+
+export interface CaseStudyChartData {
+  name: string;
+  value: number;
+}
+
+export interface CaseStudyStrategicWin {
+  title: string;
+  description: string;
+}
+
+export interface CaseStudyExtendedData {
+  handle?: string;
+  overviewMetrics?: CaseStudyMetric[];
+  contentPillars?: CaseStudyContentPillar[];
+  topPosts?: CaseStudyTopPost[];
+  growthChart?: CaseStudyChartData[];
+  impressionsChart?: CaseStudyChartData[];
+  strategicWins?: CaseStudyStrategicWin[];
+  reportSummary?: {
+    followerGrowth: string;
+    avgEngagement: string;
+    discoveryRate: string;
+  };
+}
+
+export interface CaseStudy {
+  id: string;
+  title: string;
+  subtitle: string;
+  category: string;
+  heroImage: string;
+  beforeImage: string;
+  afterImage: string;
+  clientLogo?: string;
+  industry: string;
+  duration: string;
+  year: string;
+  struggle: {
+    headline: string;
+    description: string;
+    painPoints: CaseStudyPainPoint[];
+  };
+  solution: {
+    description: string;
+    highlights: string[];
+  };
+  stats: CaseStudyStat[];
+  verdict: {
+    analogy: string;
+    quote: string;
+    tagline: string;
+  };
+  ctaText: string;
+  services: string[];
+  extendedData?: CaseStudyExtendedData;
+}
