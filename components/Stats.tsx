@@ -20,7 +20,7 @@ export const Stats: React.FC = () => {
                {/* Left Image */}
                <div className="hover-box lg:col-span-4 rounded-3xl overflow-hidden h-full min-h-[300px] border border-brand-oxford/10 dark:border-white/10">
                   <img
-                     src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=1974&auto=format&fit=crop"
+                     src="https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767898115/Results_that_we_sucessfully_deliver_left_image_nf7nt1.jpg"
                      className="w-full h-full object-cover"
                      alt="working"
                   />
@@ -77,7 +77,7 @@ export const Stats: React.FC = () => {
                {/* Right Image */}
                <div className="hover-box lg:col-span-4 rounded-3xl overflow-hidden h-full min-h-[400px] relative border border-brand-oxford/10 dark:border-white/10">
                   <img
-                     src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2032&auto=format&fit=crop"
+                     src="https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767897715/Unlock_Your_Growth_with_Our_Core_Digital_Solutions_eascie.jpg"
                      className="w-full h-full object-cover"
                      alt="team high five"
                   />

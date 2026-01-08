@@ -39,7 +39,7 @@ export const Services: React.FC = () => {
                   key={service.id}
                   src={service.image}
                   alt={service.title}
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${activeService === service.id ? 'opacity-100' : 'opacity-0'}`}
+                  className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ${activeService === service.id ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                 />
               ))}
 

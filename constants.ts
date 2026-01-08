@@ -15,7 +15,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'website-solutions',
     title: 'Website Solutions',
     description: 'High-performance websites designed to build trust, capture leads, and scale with your business.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop',
+    image: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767897715/Unlock_Your_Growth_with_Our_Core_Digital_Solutions_eascie.jpg',
     tags: ['Corporate', 'E-Commerce', 'Custom Web App'],
     longDescription: "In the digital economy, your website is your headquarters. We build pixel-perfect, lightning-fast, and secure websites that don't just look good—they work. From corporate portfolios to complex e-commerce engines, our solutions are engineered for conversion and reliability.",
     benefits: [
@@ -421,7 +421,7 @@ export const SERVICES: ServiceItem[] = [
 export const PROJECTS: ProjectItem[] = [
   {
     id: '1',
-    title: 'Back2Basics (HR & Training)',
+    title: 'Back2Basics',
     category: 'Building Digital Authority for HR Experts',
     image: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767844685/1_luwcce.jpg'
   },
