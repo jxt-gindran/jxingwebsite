@@ -183,7 +183,7 @@ export const Hero: React.FC = () => {
             <video
               ref={videoRef}
               src="https://res.cloudinary.com/dyzxj3ypa/video/upload/v1767844371/JXING_Website_HERO_Vid_isekzi.mp4"
-              poster="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop"
+              // poster="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop"
               autoPlay
               loop
               muted
