@@ -134,7 +134,7 @@ const resources = {
         },
         portfolio: {
           badge: "Selected works",
-          title: "Our finished projects",
+          title: "From Concept to Impact",
           desc: "Read how we've helped some of the biggest brands transform their business.",
           viewAll: "View All Works"
         },
@@ -530,7 +530,7 @@ const resources = {
         },
         portfolio: {
           badge: "Karya terpilih",
-          title: "Projek siap kami",
+          title: "Dari Konsep ke Impak",
           desc: "Baca bagaimana kami telah membantu beberapa jenama terbesar mengubah perniagaan mereka.",
           viewAll: "Lihat Semua Karya"
         },
@@ -922,7 +922,7 @@ const resources = {
         },
         portfolio: {
           badge: "चयनित कार्य",
-          title: "हमारी पूरी की गई परियोजनाएं",
+          title: "अवधारणा से प्रभाव तक",
           desc: "पढ़ें कि हमने कुछ सबसे बड़े ब्रांडों को उनके व्यवसाय को बदलने में कैसे मदद की है।",
           viewAll: "सभी कार्य देखें"
         },
@@ -1362,7 +1362,7 @@ const resources = {
         },
         portfolio: {
           badge: "Obras seleccionadas",
-          title: "Nuestros proyectos terminados",
+          title: "Del Concepto al Impacto",
           desc: "Lea cómo hemos ayudado a algunas de las marcas más grandes a transformar su negocio.",
           viewAll: "Ver todos los trabajos"
         },
@@ -1764,7 +1764,7 @@ const resources = {
         },
         portfolio: {
           badge: "أعمال مختارة",
-          title: "مشاريعنا المنجزة",
+          title: "من الفكرة إلى التأثير",
           desc: "اقرأ كيف ساعدنا بعضًا من أكبر العلامات التجارية على تحويل أعمالهم.",
           viewAll: "عرض جميع الأعمال"
         },
@@ -2184,7 +2184,7 @@ const resources = {
         },
         portfolio: {
           badge: "精选作品",
-          title: "我们完成的项目",
+          title: "从概念到影响",
           desc: "阅读我们如何帮助一些最大的品牌转型业务。",
           viewAll: "查看所有作品"
         },

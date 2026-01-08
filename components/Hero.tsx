@@ -182,7 +182,7 @@ export const Hero: React.FC = () => {
           <div className="hover-box rounded-3xl overflow-hidden shadow-2xl shadow-brand-oxford/5 dark:shadow-none relative group bg-brand-timberwolf dark:bg-slate-800 border border-brand-oxford/10 dark:border-white/10">
             <video
               ref={videoRef}
-              src="/videos/jxing_home.mp4"
+              src="https://res.cloudinary.com/dyzxj3ypa/video/upload/v1767844371/JXING_Website_HERO_Vid_isekzi.mp4"
               poster="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop"
               autoPlay
               loop

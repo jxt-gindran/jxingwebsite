@@ -423,37 +423,31 @@ export const PROJECTS: ProjectItem[] = [
     id: '1',
     title: 'Back2Basics (HR & Training)',
     category: 'Building Digital Authority for HR Experts',
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974&auto=format&fit=crop'
+    image: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767844685/1_luwcce.jpg'
   },
   {
     id: '2',
     title: 'Borneo International Marathon',
     category: 'Digitally Ahead, Every Step of the Way',
-    image: 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1974&auto=format&fit=crop'
+    image: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767844685/2_ta4m4f.jpg'
   },
   {
     id: '3',
     title: 'Thurai Dental',
     category: 'Development',
-    image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767844686/3_czmmvt.jpg'
   },
   {
-    id: '4',
-    title: 'Scaling Dental Trust & Appointments, 24/7',
-    category: 'Advanced Analytics',
-    image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop'
-  },
-   {
     id: '5',
     title: 'Gibb & Co Lawyers',
     category: 'Legacy Meets Modern Authority',
-    image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop'
+    image: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767844686/4_m21h7g.jpg'
   },
   {
     id: '6',
     title: 'Evo House Singapore',
     category: 'Redefining Premium Living',
-    image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=2069&auto=format&fit=crop'
+    image: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767844687/5_hezjpk.jpg'
   },
 ];
 
@@ -463,9 +457,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: 'Back2Basics',
     subtitle: 'Building Digital Authority for HR Experts',
     category: 'HR & Training',
-    heroImage: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop',
-    beforeImage: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop',
-    afterImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
+    heroImage: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767842639/B2B_Case_Study_image_diqavr.jpg',
+    beforeImage: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767843376/Back2Basics_Old_Site_hiwbee.png',
+    afterImage: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767843370/Back2Basics_New_Site_mror8c.png',
     industry: 'Corporate Training & HR Consulting',
     duration: '8 weeks',
     year: '2024',
@@ -515,8 +509,8 @@ export const CASE_STUDIES: CaseStudy[] = [
     subtitle: 'Digitally Ahead, Every Step of the Way',
     category: 'Sports & Events',
     heroImage: 'https://images.unsplash.com/photo-1513593771513-7b58b6c4af38?q=80&w=2072&auto=format&fit=crop',
-    beforeImage: 'https://images.unsplash.com/photo-1461896836934-28e377c37b09?q=80&w=2070&auto=format&fit=crop',
-    afterImage: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop',
+    beforeImage: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767843839/BorneoMarathon_Old_Site_g8cgxq.png',
+    afterImage: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767843837/BorneoMarathon_New_Site_gbszzj.png',
     industry: 'Sports Events',
     duration: '6 weeks',
     year: '2024',
@@ -566,8 +560,8 @@ export const CASE_STUDIES: CaseStudy[] = [
     subtitle: 'Scaling Dental Trust & Appointments, 24/7',
     category: 'Healthcare',
     heroImage: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop',
-    beforeImage: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop',
-    afterImage: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2074&auto=format&fit=crop',
+    beforeImage: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767844035/ThuraiDental_Old_Site_wc1tjg.png',
+    afterImage: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767844033/Thurai_Dental_New_Site_nvayey.png',
     industry: 'Dental Healthcare',
     duration: '10 weeks',
     year: '2024',
@@ -617,8 +611,8 @@ export const CASE_STUDIES: CaseStudy[] = [
     subtitle: 'Legacy Meets Modern Authority',
     category: 'Legal',
     heroImage: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop',
-    beforeImage: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop',
-    afterImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop',
+    beforeImage: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767843907/Gibb_Co_Old_Site_fuwkl3.png',
+    afterImage: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767843903/Gibb_Co_New_Site_myrhvd.png',
     industry: 'Legal Services',
     duration: '12 weeks',
     year: '2024',
@@ -671,7 +665,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: 'Evo House Singapore',
     subtitle: 'Redefining Premium Living',
     category: 'Student Accommodation',
-    heroImage: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=2069&auto=format&fit=crop',
+    heroImage: 'https://res.cloudinary.com/dyzxj3ypa/image/upload/v1767843160/Case_Study_Image_Evohouse_1_stjqkf.jpg',
     beforeImage: 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1974&auto=format&fit=crop',
     afterImage: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974&auto=format&fit=crop',
     industry: 'Student Accommodation',
